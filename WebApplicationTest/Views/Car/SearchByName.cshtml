@@ -1,0 +1,14 @@
+﻿@model WebApplicationTest.Models.Car
+@{
+    ViewBag.Title = "SearchByName";
+}
+
+<h2>SearchByName</h2>
+
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header">@Model.id</div>
+    <div class="card-body">
+        <h5 class="card-title">@Model.description</h5>
+        <p class="card-text">@Model.name</p>
+    </div>
+</div>

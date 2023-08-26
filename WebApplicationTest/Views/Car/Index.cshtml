@@ -1,0 +1,19 @@
+﻿@model List<WebApplicationTest.Models.Car>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model.ToList())
+{
+    
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">@item.name</div>
+        <div class="card-body">
+            <h5 class="card-title">@item.description</h5>
+            <p class="card-text">@item.id</p>
+        </div>    
+    </div>
+
+}
